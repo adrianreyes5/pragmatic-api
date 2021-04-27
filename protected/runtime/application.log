@@ -1,0 +1,20 @@
+2021/04/23 23:53:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bet".' in A:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 A:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('bet')
+#1 A:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('bet')
+#2 A:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bet')
+#3 A:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 A:\xampp\htdocs\pragma\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pragma/index.php?r=site/bet
+---
+2021/04/24 00:05:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "bet".' in A:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 A:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('bet')
+#1 A:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('bet')
+#2 A:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/bet')
+#3 A:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 A:\xampp\htdocs\pragma\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pragma/index.php?r=site/bet
+---
