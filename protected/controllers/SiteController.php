@@ -105,21 +105,87 @@ class SiteController extends Controller
 	}
 
 	/** Adrian */
+	/** 3.4  */
 	public function actionAuthenticate()
 	{
 		$data = authenticate($_POST);
 		$this->_sendResponse(200, CJSON::encode($data));
 	}
 
+	/** 3.6 */
 	public function actionBalance()
 	{
 		$data = balance($_POST);
 		$this->_sendResponse(200, CJSON::encode($data));
 	}
 
+	/** 3.7 */
 	public function actionBet()
 	{
-		$data = balance($_POST);
+		$data = bet($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.8 */
+	public function actionResult()
+	{
+		$data = result($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.9 */
+	public function actionBonusWin()
+	{
+		$data = bonusWin($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.10 */
+	public function actionJackpotWin()
+	{
+		$data = jackpotWin($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.11 */
+	public function actionEndRound()
+	{
+		$data = endRound($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.12 */
+	public function actionRefund()
+	{
+		$data = refund($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.13 */
+	public function actionWithdraw()
+	{
+		$data = withdraw($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.14 */
+	public function actionGetBalancePerGame()
+	{
+		$data = getBalancePerGame($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.15 */
+	public function actionPromoWin()
+	{
+		$data = promoWin($_POST);
+		$this->_sendResponse(200, CJSON::encode($data));
+	}
+
+	/** 3.16 */
+	public function actionSessionExpired()
+	{
+		$data = sessionExpired($_POST);
 		$this->_sendResponse(200, CJSON::encode($data));
 	}
 
