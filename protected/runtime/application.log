@@ -18,3 +18,59 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/pragma/index.php?r=site/bet
 ---
+2021/04/28 20:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in E:\Github\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\Github\yii\framework\web\CController.php(270): CController->missingAction('contact')
+#1 E:\Github\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 E:\Github\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('alternar/contac...')
+#3 E:\Github\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\Github\pragmatic-api\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pragmatic-api/index.php?r=alternar/contact
+---
+2021/04/28 20:38:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autheticate".' in E:\Github\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\Github\yii\framework\web\CController.php(270): CController->missingAction('autheticate')
+#1 E:\Github\yii\framework\web\CWebApplication.php(282): CController->run('autheticate')
+#2 E:\Github\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('alternar/authet...')
+#3 E:\Github\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\Github\pragmatic-api\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pragmatic-api/index.php?r=alternar/autheticate
+---
+2021/04/28 20:59:17 [error] [php] Array to string conversion (E:\Github\pragmatic-api\protected\controllers\AlternarController.php:76)
+Stack trace:
+#0 E:\Github\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 E:\Github\yii\framework\web\CController.php(286): AlternarController->runAction()
+#2 E:\Github\yii\framework\web\CController.php(265): AlternarController->runActionWithFilters()
+#3 E:\Github\yii\framework\web\CWebApplication.php(282): AlternarController->run()
+#4 E:\Github\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\Github\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 E:\Github\pragmatic-api\index.php(13): CWebApplication->run()
+REQUEST_URI=/pragmatic-api/index.php?r=alternar/authenticate
+in E:\Github\pragmatic-api\protected\controllers\AlternarController.php (76)
+in E:\Github\pragmatic-api\protected\controllers\AlternarController.php (36)
+in E:\Github\pragmatic-api\index.php (13)
+2021/04/28 21:01:19 [error] [php] Array to string conversion (E:\Github\pragmatic-api\protected\controllers\AlternarController.php:80)
+Stack trace:
+#0 E:\Github\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 E:\Github\yii\framework\web\CController.php(286): AlternarController->runAction()
+#2 E:\Github\yii\framework\web\CController.php(265): AlternarController->runActionWithFilters()
+#3 E:\Github\yii\framework\web\CWebApplication.php(282): AlternarController->run()
+#4 E:\Github\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 E:\Github\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 E:\Github\pragmatic-api\index.php(13): CWebApplication->run()
+REQUEST_URI=/pragmatic-api/index.php?r=alternar/authenticate
+in E:\Github\pragmatic-api\protected\controllers\AlternarController.php (80)
+in E:\Github\pragmatic-api\protected\controllers\AlternarController.php (36)
+in E:\Github\pragmatic-api\index.php (13)
+2021/04/28 21:53:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "authenticate".' in E:\Github\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\Github\yii\framework\web\CController.php(270): CController->missingAction('authenticate')
+#1 E:\Github\yii\framework\web\CWebApplication.php(282): CController->run('authenticate')
+#2 E:\Github\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('alternar/authen...')
+#3 E:\Github\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\Github\pragmatic-api\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pragmatic-api/index.php?r=alternar/authenticate
+---
